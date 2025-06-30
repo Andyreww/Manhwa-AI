@@ -245,7 +245,7 @@ def translate_with_llm(text_to_translate):
     try:
         # It's better practice to load the API key from an environment variable
         # rather than hardcoding it directly in the script.
-        apiKey = os.environ.get("GOOGLE_AI_API_KEY", "AIzaSyDQ8cxecPNUb9iwcxQXDQuTtUgWCEZtSzs")
+        apiKey = os.environ.get("GOOGLE_AI_API_KEY", "Enter our API KEY HERE")
         if apiKey == "PASTE_YOUR_NEW_GOOGLE_AI_API_KEY_HERE" or not apiKey:
             print("  ERROR: Please paste your new Google AI API key into the script or set it as an environment variable.")
             return "[Translation Error: Missing API Key]"
